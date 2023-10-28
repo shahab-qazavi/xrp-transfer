@@ -17,11 +17,11 @@ And then use xrp_transfer() function.
 
 For using xrp_transfer() function you must have to:
 
-    private key ==> private_key
+    origin wallet private key ==> private_key
   
-    public key ==> public_key
+    origin wallet public key ==> public_key
   
-    wallet address for origin wallet address ==> my_address
+    origin wallet address ==> my_address
   
     destination wallet addres ==> to_address
   
