@@ -1,5 +1,5 @@
 # xrp-transfer
-Transfer XRP in Ripple mainnet with memo address using xrlp-py library
+Transfer XRP in Ripple mainnet with memo address using xrpl-py library
 
 
 Dependency:
