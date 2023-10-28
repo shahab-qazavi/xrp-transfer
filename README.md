@@ -27,6 +27,6 @@ For using xrp_transfer() function you must have to:
   
     amount value for transfering XRP ==> amount
   
-    decimals for calculate correct XRP coin ==> decilams
+    decimals for calculate correct XRP coin for checking account balance ==> decilams
 
     memo address (it's optional) ==> memo
