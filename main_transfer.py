@@ -9,7 +9,7 @@ from xrpl.transaction import submit_and_wait, autofill_and_sign
 from services.xrp_tools import get_minimum_xrp_wallet, xrp_generate_destination_tag, XRPConsts
 
 
-def transfer(private_key: str, public_key: str, my_address: str,
+def xrp_transfer(private_key: str, public_key: str, my_address: str,
              to_address: str, amount: int, decimals: int, memo: str = '') -> dict[str, Any]:
 
     xrp_wallet = xrpl.wallet.Wallet(private_key=private_key, public_key=public_key)
