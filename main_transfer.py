@@ -7,7 +7,7 @@ from xrpl.transaction import submit_and_wait, autofill_and_sign
 from services.xrp_tools import get_minimum_xrp_wallet, xrp_generate_destination_tag, XRPConsts
 
 
-def withdrawal_core(private_key, public_key, my_address, to_address, amount, memo, decimals):
+def transfer(private_key, public_key, my_address, to_address, amount, memo, decimals):
 
     xrp_wallet = xrpl.wallet.Wallet(private_key=private_key, public_key=public_key)
 
