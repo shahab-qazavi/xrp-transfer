@@ -10,17 +10,21 @@ xrpl-py version 2.1.0
 First install the requirements.txt file
 
 
-And then use transfer() function.
+And then use xrp_transfer() function.
 
 
-For using transfer() function you must have to:
+For using xrp_transfer() function you must have to:
 
-  private key, public key and wallet address for origin wallet address
+    private key ==> private_key
   
-  destination wallet addres
+    public key ==> public_key
   
-  amount value
+    wallet address for origin wallet address ==> my_address
   
-  memo address (it's optional)
+    destination wallet addres ==> to_address
   
-  and decimals for calculate correct XRP coin
+    amount value for transfering XRP ==> amount
+  
+    decimals for calculate correct XRP coin ==> decilams
+
+    memo address (it's optional) ==> memo
