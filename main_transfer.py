@@ -10,7 +10,7 @@ from services.xrp_tools import get_minimum_xrp_wallet, xrp_generate_destination_
 
 
 def transfer(private_key: str, public_key: str, my_address: str,
-             to_address: str, amount: int, memo: str, decimals: int) -> dict[str, Any]:
+             to_address: str, amount: int, decimals: int, memo: str = '') -> dict[str, Any]:
 
     xrp_wallet = xrpl.wallet.Wallet(private_key=private_key, public_key=public_key)
 
