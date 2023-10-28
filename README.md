@@ -9,6 +9,8 @@ Dependency:
 
 First install the requirements.txt file
 
+    pip install -r requirements.txt
+
 
 And then use xrp_transfer() function.
 
