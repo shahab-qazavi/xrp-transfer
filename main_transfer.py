@@ -1,3 +1,5 @@
+from typing import Any
+
 import xrpl
 from xrpl.account import get_balance, get_next_valid_seq_number
 from xrpl.clients import JsonRpcClient
@@ -7,7 +9,8 @@ from xrpl.transaction import submit_and_wait, autofill_and_sign
 from services.xrp_tools import get_minimum_xrp_wallet, xrp_generate_destination_tag, XRPConsts
 
 
-def transfer(private_key, public_key, my_address, to_address, amount, memo, decimals):
+def transfer(private_key: str, public_key: str, my_address: str,
+             to_address: str, amount: int, memo: str, decimals: int) -> dict[str, Any]:
 
     xrp_wallet = xrpl.wallet.Wallet(private_key=private_key, public_key=public_key)
 
@@ -24,7 +27,7 @@ def transfer(private_key, public_key, my_address, to_address, amount, memo, deci
     account_balance = get_balance(my_address, client)
 
     if account_balance < get_minimum_xrp_wallet(decimals):
-        return "Balance is insufficient!"
+        return {"message": "Balance is insufficient!"}
 
     payment_items = {
         "account": xrp_wallet.classic_address,
